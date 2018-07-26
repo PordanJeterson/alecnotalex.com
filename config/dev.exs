@@ -8,8 +8,10 @@ use Mix.Config
 # with brunch.io to recompile .js and .css sources.
 config :alecnotalex,
        AlecnotalexWeb.Endpoint,
-       http: [
-         port: 4000
+       https: [
+         port: 4000,
+         keyfile: "priv/server.key",
+         certfile: "priv/server.pem"
        ],
        debug_errors: true,
        code_reloader: true,

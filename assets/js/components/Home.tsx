@@ -1,16 +1,24 @@
 import * as React from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import {Component} from 'react';
+import {withStyles} from "@material-ui/core";
 
-export default class Home extends React.Component<{}, {}> {
-    constructor(props) {
-        super(props)
-    }
+import homeStyle from './HomeStyle';
+
+interface HomeProps {
+    classes: any
+}
+
+class Home extends Component<HomeProps, {}> {
 
     public render(): JSX.Element {
+        const {classes} = this.props;
+        console.log(classes);
         return (
-            <div>
+            <div className={classes.root}>
                 test
             </div>
         )
     }
 }
+
+export default withStyles(homeStyle)(Home);
