@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {Component} from 'react';
-import {withStyles} from "@material-ui/core";
+import {Component, Fragment} from 'react';
+import {withStyles, AppBar} from "@material-ui/core";
 
 import homeStyle from './HomeStyle';
 
@@ -12,11 +12,15 @@ class Home extends Component<HomeProps, {}> {
 
     public render(): JSX.Element {
         const {classes} = this.props;
-        console.log(classes);
         return (
-            <div className={classes.root}>
-                test
-            </div>
+            <Fragment >
+                <AppBar>
+                    Test
+                </AppBar>
+                <div className={classes.root}>
+                    test
+                </div>
+            </Fragment>
         )
     }
 }

@@ -6,9 +6,11 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const env = process.env.MIX_ENV === 'prod' ? 'production' : 'development';
 
+const toMinimize = env === 'production';
 
 export default {
     devtool: 'source-map',
+    mode: env,
     entry: [
         path.join(__dirname, 'assets/js/app.tsx'),
     ],
@@ -64,6 +66,6 @@ export default {
         }
     },
     optimization: {
-        minimize: false
+        minimize: toMinimize
     }
 }

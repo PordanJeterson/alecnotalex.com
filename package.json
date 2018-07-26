@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
     "history": "^4.7.2",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",

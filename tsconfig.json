@@ -8,6 +8,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "skipDefaultLibCheck": true,
+    "alwaysStrict": true,
     "lib": [
       "es2015",
       "esnext",
