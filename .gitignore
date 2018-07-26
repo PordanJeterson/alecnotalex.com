@@ -6,6 +6,7 @@
 alecnotalex.iml
 .idea
 .idea/*
+/node_modules
 
 # Generated on crash by the VM
 erl_crash.dump
