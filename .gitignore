@@ -3,6 +3,9 @@
 /db
 /deps
 /*.ez
+alecnotalex.iml
+.idea
+.idea/*
 
 # Generated on crash by the VM
 erl_crash.dump
