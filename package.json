@@ -1,0 +1,15 @@
+{
+  "name": "alecnotalex",
+  "version": "0.0.1",
+  "description": "Home page for alecnotalex.com",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}
