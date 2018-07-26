@@ -20,4 +20,5 @@ erl_crash.dump
 /config/*.secret.exs
 
 # dont want to leak our keys!
-priv/*
+priv/server.key
+priv/server.pem
